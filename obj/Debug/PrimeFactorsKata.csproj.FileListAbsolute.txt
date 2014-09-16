@@ -1,6 +1,0 @@
-c:\users\andrei.albu\documents\visual studio 2013\Projects\PrimeFactorsKata\PrimeFactorsKata\bin\Debug\PrimeFactorsKata.exe.config
-c:\users\andrei.albu\documents\visual studio 2013\Projects\PrimeFactorsKata\PrimeFactorsKata\bin\Debug\PrimeFactorsKata.exe
-c:\users\andrei.albu\documents\visual studio 2013\Projects\PrimeFactorsKata\PrimeFactorsKata\bin\Debug\PrimeFactorsKata.pdb
-c:\users\andrei.albu\documents\visual studio 2013\Projects\PrimeFactorsKata\PrimeFactorsKata\obj\Debug\PrimeFactorsKata.exe
-c:\users\andrei.albu\documents\visual studio 2013\Projects\PrimeFactorsKata\PrimeFactorsKata\obj\Debug\PrimeFactorsKata.pdb
-c:\users\andrei.albu\documents\visual studio 2013\Projects\PrimeFactorsKata\PrimeFactorsKata\obj\Debug\PrimeFactorsKata.csprojResolveAssemblyReference.cache
