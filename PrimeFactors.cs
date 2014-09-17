@@ -1,47 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace PrimeFactorsKata
 {
     class PrimeFactors
     {
-        private const int MaxSize = 2000;
-
-        public static List<int> Generate(int number)
+        List<int> primesList = new List<int>();
+        public List<int> Generate(int number)
         {
-            int count = 0;
-            List<int> primesList = new List<int>(new int[MaxSize]);
-            List<int> result = new List<int>(new int[MaxSize]);
-            int index = 0;
+            List<int> result = new List<int>();
 
-            for (int i = 2; i <= number; i++)
-            {
-                if (IsPrime(i))
-                    primesList[count++] = i;
-            }
+            FindPrimes(number);
 
             while (true)
             {
                 if (IsPrime(number))
                 {
-                    result[index++] = number;
+                    result.Add(number);
                     break;
                 }
 
-                for (int i = count - 1; i >= 0; i--)
+                for (int i = 0; i < primesList.Count; i++)
                 {
                     if ((number % primesList[i]) == 0)
                     {
-                        result[index++] = primesList[i];
+                        result.Add(primesList[i]);
                         number = number / primesList[i];
                         break;
                     }
                 }
             }
             return result;
+        }
+
+        private void FindPrimes(int number)
+        {
+            for (int i = 2; i <= number; i++)
+            {
+                if (IsPrime(i))
+                    primesList.Add(i);
+            }
+
         }
 
         private static bool IsPrime(int number)
